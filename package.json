@@ -1,0 +1,17 @@
+{
+  "name": "sellgrup-bot",
+  "version": "1.0.0",
+  "description": "Bot Created By Rxhl Official",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "@shennmine/baileys": "^2.1.1",
+    "moment": "^2.30.1",
+    "chalk": "^4.1.2",
+    "pino": "^10.0.0"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
