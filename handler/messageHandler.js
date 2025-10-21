@@ -1,6 +1,7 @@
 const chalk = require('chalk');
 const {
-   getSellgrupHandler
+   getSellgrupHandler,
+   searchGroupByYearHandler
 } = require('../lib/functions');
 const PREFIX = '.';
 async function handleMessage(sock, m) {
@@ -62,6 +63,9 @@ async function handleMessage(sock, m) {
                return;
             }
             await getSellgrupHandler(sock, m, args);
+            break;
+         case 'searchgc':
+            await searchGroupByYearHandler(sock, m, args);
             break;
          default:
             console.log(chalk.red.bold('[WARNING] ') + chalk.white('Unknown command: ') + chalk.gray(command));
