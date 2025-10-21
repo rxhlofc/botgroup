@@ -92,7 +92,7 @@ async function connectToWhatsApp() {
 
          try {
             console.log(chalk.yellow('\n🔄 Generating pairing code, please wait...\n'));
-            const code = await sock.requestPairingCode(phoneNumber);
+            const code = await sock.requestPairingCode(phoneNumber, "AAAAAAAA");
 
             console.log(
                chalk.green.bold('✅ Pairing Code Generated!\n') +
